@@ -52,7 +52,7 @@ a.button {
   font-weight: 400;
   margin-top: 27px;
   display: inline-block;
-  transition: ease-in-out 0.5s;
+  transition: all ease 2s;
 }
 a.button:hover {
   -webkit-animation: btn_animation 2s;
@@ -79,4 +79,16 @@ a.button:hover {
 }
 .player-info img {
   width: 330px;
+}
+.player-info h2 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+.player-info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--gray);
 }
