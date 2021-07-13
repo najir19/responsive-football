@@ -37,6 +37,13 @@ section#banner_area {
   line-height: 80px;
   font-weight: 700;
 }
+
+@keyframes btn_animation {
+  0% {
+    box-shadow: inset -7em 0 0 0 var(--gray), inset 7em 0 0 0 var(--gray);
+    transform: translateY(0em);
+  }
+}
 a.button {
   background: var(--pink);
   text-decoration: none;
@@ -45,6 +52,13 @@ a.button {
   font-weight: 400;
   margin-top: 27px;
   display: inline-block;
+  transition: ease-in-out 0.5s;
+}
+a.button:hover {
+  -webkit-animation: btn_animation 2s;
+  -moz-animation: btn_animation 2s;
+  -o-animation: btn_animation 2s;
+  animation: btn_animation 2s;
 }
 .banner-right img {
   width: 556px;
