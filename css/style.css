@@ -152,7 +152,7 @@ section#featured_area {
 }
 form {
   width: 428px;
-  margin: 50px auto;
+  margin: 0px auto;
   padding: 50px;
 }
 form.newsletter_form p {
@@ -190,10 +190,8 @@ input {
 
 input[type="submit"] {
   vertical-align: top;
-  height: 98px;
-  width: 98px;
-  margin: 0;
-  padding: 0;
+  margin-top: 15px;
+  padding: 10px 24px;
   border: 0;
   border-radius: 3px;
   background: pink;
@@ -219,6 +217,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .footer_social a {
   height: 32px;
@@ -231,4 +230,80 @@ footer {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+.social-inner {
+  display: flex;
+}
+.copyright {
+  margin-top: 20px;
+}
+
+/* Responsive  */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-inner {
+    flex-direction: column;
+  }
+  .banner-left h2 {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .banner-right img {
+    width: 329px;
+    margin-top: 44px;
+  }
+  .player_list_inner {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 44px;
+  }
+  .player-info img {
+    width: 300px;
+  }
+  .featured-inner {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .featured-left h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 8px;
+  }
+  .featured-right img {
+    width: 328px;
+    margin-top: 128px;
+  }
+  .merchandise-inner {
+    flex-direction: column;
+  }
+  .merchandise_right img {
+    width: 367px;
+  }
+  form {
+    width: auto;
+  }
+  .info input {
+    width: 200px;
+  }
+  .newsletter_form h1 {
+    font-size: 22px;
+  }
+  .footer_info img {
+    width: 220px;
+    margin-bottom: 30px;
+  }
 }
