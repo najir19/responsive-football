@@ -92,3 +92,143 @@ a.button:hover {
   font-weight: 400;
   color: var(--gray);
 }
+/* Feature Section */
+section#featured_area {
+  color: var(--black);
+  padding-top: 2%;
+  padding-bottom: 7%;
+}
+.featured-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-left {
+  padding-right: 66px;
+}
+.featured-left h2 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.featured-left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.featured-right img {
+  width: 567px;
+}
+/* Merchandise Section */
+#View_merchandise {
+  padding-bottom: 5%;
+  background: #e6b9b9;
+}
+.merchandise-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.merchandise_btn {
+  background: #181832;
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 24px;
+  font-weight: 400;
+  margin-top: 27px;
+  display: inline-block;
+  transition: all ease 0.7s;
+}
+.merchandise_btn:hover {
+  background-color: var(--pink);
+}
+.merchandise_right img {
+  width: 467px;
+  margin-top: 5%;
+}
+/* newsletter section */
+#newsletter {
+  background: #ddd;
+}
+form {
+  width: 428px;
+  margin: 50px auto;
+  padding: 50px;
+}
+form.newsletter_form p {
+  padding: 10px 0;
+}
+input {
+  font-family: "PT Sans Narrow";
+  font-size: 20px;
+}
+
+.info {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.info input {
+  display: block;
+  width: 300px;
+  height: 20px;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 10px 0;
+  padding: 12px 10px;
+  background: #fff;
+}
+
+.info input:last-child {
+  margin: 0;
+}
+
+.info input:focus {
+  background: #eee;
+  outline: none;
+}
+
+input[type="submit"] {
+  vertical-align: top;
+  height: 98px;
+  width: 98px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: pink;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6c54, #ffa754);
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(180deg, #ff6c54, #ffa754);
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 5%;
+}
+.footer_info img {
+  width: 483px;
+}
+.footer_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_social a {
+  height: 32px;
+  background: #e7e7e8;
+  color: #969bab;
+  border-radius: 24px;
+  width: 32px;
+  margin: 0 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
